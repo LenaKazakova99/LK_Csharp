@@ -35,18 +35,25 @@ int year = Method3();
 Console.WriteLine(year);
 
 // Вид 4
-string Method4(int count, string c)
+// string Method4(int count, string c)
+// {
+//     int i = 0;
+//     string result = String.Empty;
+//     for (int m = 0; m < count; m++)
+//     {
+//         result = result + c;
+//     }
+//     return result;
+// }
+
+// string res = Method4(10, "asdf");
+// Console.WriteLine(res);
+
+for (int i = 2; i <= 10; i++)
 {
-    int i = 0;
-    string result = String.Empty;
-
-    while (i < count)
+    for (int j = 2; j <= 10; j++)
     {
-        result = result + c;
-        i++;
+        Console.WriteLine($"{i} x {j} = {i * j}");
     }
-    return result;
+    Console.WriteLine();
 }
-
-string res = Method4(10, "asdf");
-Console.WriteLine(res);
